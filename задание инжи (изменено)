@@ -1,0 +1,21 @@
+#include <iostream>
+#include <string>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+int main() {
+// Создаем вектор строк
+vector names = {"Alice", "Bob", "Charlie", "David", "Eve"};
+
+// Сортируем вектор в алфавитном порядке
+sort(names.begin(), names.end());
+
+// Выводим отсортированный список имен
+cout << "Отсортированный список имен:" << endl;
+for (const string& name : names) {
+cout << name << endl;
+}
+
+return 0;
+}
